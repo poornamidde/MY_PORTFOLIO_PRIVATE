@@ -1,0 +1,27 @@
+/* Step 4: compact technical notes, isolated from the site's legacy styles */
+.engineering-insights-section{background:#101820;color:#e8edf3;padding:96px 0 88px;}
+.engineering-insights-intro{margin-bottom:34px;}
+.engineering-insights-section .project-eyebrow{color:#73daca;letter-spacing:.16em;font-size:11px;font-weight:700;margin-bottom:12px;}
+.engineering-insights-section h2{color:#f4f7fb;margin:0 0 14px;font-size:clamp(28px,4vw,42px);}
+.engineering-insights-section .lead{color:#aab6c4;max-width:830px;line-height:1.8;}
+.engineering-insights-grid{max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.engineering-insight-card{min-width:0;background:linear-gradient(145deg,#151f29,#111820);border:1px solid #2a3947;border-radius:15px;padding:23px;box-shadow:0 12px 30px rgba(0,0,0,.15);}
+.insight-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#8d9dad;font-size:10px;font-weight:700;letter-spacing:.1em;margin-bottom:18px;}
+.engineering-insight-card h3{color:#f2f6fa;font-size:20px;line-height:1.4;margin:0 0 12px;}
+.engineering-insight-card>p{color:#b0bdc9;line-height:1.75;font-size:14px;margin-bottom:18px;}
+.insight-tags{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px;}
+.insight-tags span{font-size:10px;color:#a7e9de;background:#19332f;border:1px solid #2c514b;padding:5px 8px;border-radius:99px;}
+.engineering-insight-card details{border-top:1px solid #293743;padding-top:13px;}
+.engineering-insight-card summary{cursor:pointer;color:#86e2d3;font-size:13px;font-weight:700;list-style:none;}
+.engineering-insight-card summary::-webkit-details-marker{display:none;}
+.engineering-insight-card summary:after{content:'＋';float:right;font-size:17px;line-height:1;}
+.engineering-insight-card details[open] summary:after{content:'−';}
+.insight-detail{padding-top:12px;color:#b7c2cd;font-size:13px;line-height:1.75;}
+.insight-detail h4{color:#e6edf4;font-size:13px;margin:14px 0 7px;}
+.insight-detail ul{margin:0 0 12px 18px;}
+.insight-detail li{margin-bottom:7px;}
+.insight-detail code{color:#a7e9de;background:#0a1015;padding:2px 4px;border-radius:4px;}
+.insights-footer{max-width:1072px;margin:24px auto 0;padding:0 24px;color:#91a0ae;font-size:12px;line-height:1.8;}
+.insights-footer strong{color:#c8d4df;}
+@media(max-width:700px){.engineering-insights-section{padding:72px 0 64px;}.engineering-insights-grid{grid-template-columns:1fr;padding:0 18px;gap:14px;}.engineering-insight-card{padding:19px;}.insights-footer{padding:0 18px;}}
+@media(prefers-reduced-motion:reduce){.engineering-insight-card *{scroll-behavior:auto;}}

@@ -1,0 +1,46 @@
+/* ADDITIVE ENHANCEMENTS — preserves all existing portfolio styles and content */
+.tech-extra-tools{margin:17px 0 4px;padding-top:15px;border-top:1px solid rgba(151,177,219,.12)}
+.tech-extra-label{display:block;margin-bottom:10px;color:#8294b0;font:700 8px/1.4 "poppins-bold",sans-serif;letter-spacing:.16em}
+.tech-extra-chips{display:flex;flex-wrap:wrap;gap:7px}
+.tech-extra-chips span{display:inline-flex;align-items:center;min-height:25px;padding:5px 9px;border:1px solid rgba(151,177,219,.15);border-radius:999px;background:rgba(255,255,255,.035);color:#b9c7dc;font:500 9px/1.2 "poppins-medium",sans-serif;transition:transform .22s,border-color .22s,background .22s,color .22s}
+.tech-extra-chips span:hover{transform:translateY(-2px);border-color:rgba(69,228,255,.38);background:rgba(69,228,255,.07);color:#effaff}
+.hero-scroll-cue{position:relative;transition:color .25s,transform .25s}
+.hero-scroll-cue span{transform-origin:top center;animation:scrollCueFloat 1.7s ease-in-out infinite}
+.hero-scroll-cue:hover{color:#fff;transform:translateY(3px)}
+@keyframes scrollCueFloat{0%,100%{transform:translateY(0) scaleY(.75);opacity:.55}50%{transform:translateY(8px) scaleY(1.15);opacity:1}}
+/* Credly + LinkedIn hub */
+.network-hub-section{position:relative;isolation:isolate;overflow:hidden;padding:clamp(65px,8vw,105px) 24px;background:radial-gradient(ellipse at 8% 15%,rgba(69,228,255,.075),transparent 35%),radial-gradient(ellipse at 92% 85%,rgba(255,22,138,.075),transparent 35%),#080c15;border-top:1px solid rgba(151,177,219,.11);border-bottom:1px solid rgba(151,177,219,.11)}
+.network-hub-section:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent)}
+.network-hub-wrap{width:100%;max-width:1120px;margin:0 auto}
+.network-hub-heading{max-width:720px;margin:0 auto 34px;text-align:center}
+.network-hub-eyebrow{display:inline-flex;align-items:center;gap:9px;color:#8fa2bf;font:700 9px/1.4 "poppins-bold",sans-serif;letter-spacing:.18em}
+.network-hub-eyebrow i,.network-live-dot{width:7px;height:7px;border-radius:50%;background:#55e7a5;box-shadow:0 0 12px rgba(85,231,165,.5)}
+.network-hub-heading h2{margin:15px 0 12px;color:#f2f6ff;font:700 clamp(27px,4vw,42px)/1.18 "poppins-bold",sans-serif;letter-spacing:-.04em}
+.network-hub-heading h2 span{background:linear-gradient(100deg,#45e4ff,#a28cff 55%,#ff168a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.network-hub-heading p{margin:0;color:#9eacc3;font:400 12px/1.9 "poppins-regular",sans-serif}
+.network-hub-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.network-hub-card{position:relative;display:flex;flex-direction:column;min-width:0;min-height:270px;padding:27px;border:1px solid rgba(151,177,219,.17);border-radius:22px;background:linear-gradient(145deg,rgba(18,27,44,.94),rgba(9,14,25,.97));box-shadow:0 22px 55px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.045);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.network-hub-card:before{content:"";position:absolute;top:0;left:25px;right:25px;height:2px;background:linear-gradient(90deg,#45e4ff,#9c8cff,#ff168a);opacity:.8}
+.network-hub-card:after{content:"";position:absolute;width:170px;height:170px;right:-80px;top:-90px;border-radius:50%;background:rgba(69,228,255,.07);filter:blur(35px);pointer-events:none}
+.linkedin-hub-card:after{background:rgba(255,22,138,.08)}
+.network-hub-card:hover{transform:translateY(-6px) perspective(900px) rotateX(1deg);border-color:rgba(69,228,255,.32);box-shadow:0 28px 65px rgba(0,0,0,.3),0 0 28px rgba(69,228,255,.055)}
+.network-card-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}
+.network-card-icon{display:grid;place-items:center;width:43px;height:43px;border:1px solid rgba(151,177,219,.17);border-radius:14px;background:rgba(255,255,255,.05);font:700 19px/1 "poppins-bold",sans-serif}
+.credly-icon{color:#ffb84d}.linkedin-icon{color:#65baff;font-size:18px}
+.network-card-tag{color:#8193ad;font:700 8px/1.4 "poppins-bold",sans-serif;letter-spacing:.15em}
+.network-hub-card h3{margin:0 0 9px;color:#f1f5ff;font:700 19px/1.35 "poppins-bold",sans-serif}
+.network-hub-card p{max-width:470px;margin:0 0 18px;color:#9eacc3;font:400 11px/1.9 "poppins-regular",sans-serif}
+.network-card-meta{display:flex;align-items:center;gap:9px;margin-top:auto;margin-bottom:18px;color:#9eacc3;font:500 9px/1.5 "poppins-medium",sans-serif}
+.network-card-meta .network-live-dot{width:6px;height:6px}
+.network-hub-link{display:inline-flex;align-items:center;justify-content:space-between;gap:15px;width:100%;min-height:44px;padding:11px 14px;border:1px solid rgba(69,228,255,.23);border-radius:12px;background:linear-gradient(100deg,rgba(69,228,255,.09),rgba(156,140,255,.07),rgba(255,22,138,.07));color:#eaf8ff!important;font:600 10px/1.4 "poppins-medium",sans-serif;text-decoration:none!important;transition:border-color .2s,transform .2s,background .2s}
+.network-hub-link span{color:#45e4ff;font-size:16px;transition:transform .2s}
+.network-hub-link:hover{transform:translateY(-2px);border-color:rgba(69,228,255,.5);background:linear-gradient(100deg,rgba(69,228,255,.14),rgba(156,140,255,.1),rgba(255,22,138,.1))}
+.network-hub-link:hover span{transform:translate(2px,-2px)}
+.network-hub-note{margin:18px 0 0;text-align:center;color:#73839d;font:400 9px/1.7 "poppins-regular",sans-serif}
+/* Scroll-triggered entrance classes are only enabled by the additive JS */
+body.additive-scroll-motion .network-hub-card.motion-pending,
+body.additive-scroll-motion .tech-tile.motion-pending{opacity:.12;transform:translateY(25px) scale(.985)}
+body.additive-scroll-motion .network-hub-card.motion-in,
+body.additive-scroll-motion .tech-tile.motion-in{opacity:1;transform:translateY(0) scale(1)}
+@media(max-width:680px){.network-hub-section{padding:58px 17px}.network-hub-grid{grid-template-columns:1fr;gap:15px}.network-hub-card{min-height:245px;padding:22px}.tech-extra-chips{gap:6px}.tech-extra-chips span{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.hero-scroll-cue span{animation:none!important}.tech-extra-chips span,.network-hub-card,.network-hub-link,.network-hub-link span{transition:none!important}}

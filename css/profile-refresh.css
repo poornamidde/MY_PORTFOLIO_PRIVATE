@@ -1,0 +1,11 @@
+/* Step 2: professional profile refinements. Scoped to the existing profile and resume areas. */
+.profile-focus-line { margin-top:1.4rem; padding:1rem 1.2rem; border-left:3px solid #3f83f8; background:rgba(53,112,220,.07); line-height:1.8; }
+.profile-focus-line strong { color:#2f78e8; }
+.profile-languages { margin-top:1.5rem; font-size:1.25rem; }
+.resume-positioning { margin:.8rem 0 0; color:#6b8fcb; font-size:1.35rem; letter-spacing:.02em; text-align:center; }
+#resume .resume-header { padding-bottom:1.2rem; }
+#resume .resume-header h2 { line-height:1.35; }
+@media (max-width:767px) {
+  .profile-focus-line { font-size:1.25rem; }
+  .resume-positioning { padding:0 1.5rem; line-height:1.7; }
+}

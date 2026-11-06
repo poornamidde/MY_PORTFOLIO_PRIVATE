@@ -1,0 +1,25 @@
+/* Immersive engineering UI: Bootstrap 5 + GSAP enhancement layer; graceful without JS/CDNs. */
+:root{--ie-bg:#060912;--ie-panel:rgba(13,20,35,.76);--ie-line:rgba(117,153,205,.2);--ie-cyan:#4ce4ff;--ie-pink:#ff2d9b;--ie-violet:#9b8cff;--ie-ink:#edf4ff;--ie-muted:#a9b6cc}
+body{isolation:isolate}
+html{scroll-behavior:smooth;scroll-padding-top:78px}body{background:var(--ie-bg);color:var(--ie-ink);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background:radial-gradient(ellipse at 12% 12%,rgba(21,145,205,.12),transparent 35%),radial-gradient(ellipse at 86% 24%,rgba(255,45,155,.10),transparent 32%),radial-gradient(ellipse at 50% 100%,rgba(112,82,255,.09),transparent 42%),#060912}
+#ie-particle-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none;opacity:.55}
+.ie-cursor-glow{position:fixed;z-index:-1;width:360px;height:360px;border-radius:50%;pointer-events:none;opacity:0;background:radial-gradient(circle,rgba(43,194,255,.09),rgba(255,45,155,.035) 42%,transparent 70%);transform:translate(-50%,-50%);transition:opacity .25s}
+body.ie-pointer-active .ie-cursor-glow{opacity:1}
+header,.bar{background:rgba(5,8,15,.72)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+header{z-index:1000}.bar{box-shadow:0 10px 35px rgba(0,0,0,.18)}
+.engineering-hero{isolation:isolate;perspective:1200px}.engineering-hero:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(151,180,220,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(151,180,220,.045) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,#000 0%,transparent 90%)}
+.hero-glow{filter:blur(10px);mix-blend-mode:screen}.hero-tech-panel,.about-content>.col-six,.resume-header,.project-card,.case-study-card,.engineering-insight-card,.certification-card{transform-style:preserve-3d;backface-visibility:hidden}
+.hero-tech-panel{border:1px solid rgba(114,168,230,.22)!important;background:linear-gradient(145deg,rgba(15,24,42,.82),rgba(5,10,20,.76))!important;box-shadow:0 25px 100px rgba(0,0,0,.42),inset 0 1px rgba(255,255,255,.07),0 0 55px rgba(30,179,255,.07)!important;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.tech-tile{border:1px solid rgba(137,172,224,.17)!important;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018))!important;box-shadow:inset 0 1px rgba(255,255,255,.045);transition:border-color .3s,background .3s,box-shadow .3s}.tech-tile:hover{border-color:rgba(76,228,255,.5)!important;background:linear-gradient(145deg,rgba(76,228,255,.09),rgba(255,45,155,.04))!important;box-shadow:0 12px 35px rgba(0,0,0,.2),0 0 28px rgba(76,228,255,.08)}
+.about-content>.col-six,.resume-header,.project-card,.case-study-card,.engineering-insight-card,.certification-card{border-color:var(--ie-line)!important;box-shadow:0 24px 70px rgba(0,0,0,.26),inset 0 1px rgba(255,255,255,.045)!important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.project-showcase-section,.case-studies-section,#insights,#certifications,#contact{position:relative;isolation:isolate}.project-showcase-section:before,.case-studies-section:before,#insights:before,#certifications:before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background:radial-gradient(ellipse at 5% 12%,rgba(76,228,255,.055),transparent 36%),radial-gradient(ellipse at 95% 45%,rgba(255,45,155,.05),transparent 34%)}
+.ie-section-orb{position:absolute;z-index:-1;pointer-events:none;width:250px;height:250px;border-radius:50%;filter:blur(65px);opacity:.11;background:var(--ie-cyan)}
+.ie-reveal{opacity:0;transform:translateY(28px)}.ie-reveal.ie-revealed{opacity:1;transform:translateY(0)}
+.ie-tilt{will-change:transform;transform-style:preserve-3d}.ie-tilt>*{transform:translateZ(0)}
+.project-card:hover,.case-study-card:hover,.insight-card:hover,.certification-card:hover{border-color:rgba(76,228,255,.34)!important}
+.button,.intro-actions a,.project-filter{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.button:hover,.intro-actions a:hover{transform:translateY(-3px)}
+#resume .typewriter-text{max-width:900px;margin-inline:auto;white-space:pre-line}
+/* Keep the legacy theme's layout intact while improving small-screen behavior. */
+@media(max-width:767px){.hero-tech-panel{margin-top:30px}.ie-cursor-glow{display:none}#ie-particle-canvas{opacity:.28}.hero-tech-panel,.about-content>.col-six,.resume-header{backdrop-filter:blur(12px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#ie-particle-canvas,.ie-cursor-glow{display:none!important}.ie-reveal{opacity:1!important;transform:none!important;transition:none!important}.ie-tilt{transform:none!important}*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

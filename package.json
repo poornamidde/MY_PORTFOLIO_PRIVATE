@@ -1,0 +1,13 @@
+{
+  "name": "poorna-cloud-devops-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Static portfolio with Bootstrap 5 and GSAP progressive enhancements",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.12.5"
+  },
+  "scripts": {
+    "serve": "npx serve ."
+  }
+}
